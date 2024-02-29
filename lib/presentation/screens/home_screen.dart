@@ -13,22 +13,20 @@ class HomeScreen extends StatelessWidget {
             child: const MyAppBar()),
         body: SingleChildScrollView(
           child: Center(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.end,
-              mainAxisAlignment: MainAxisAlignment.center,
+            child: Stack(
               children: [
-                SizedBox(
-                    height: screenHeight * 0.1,
-                    child: const ViewAllBooks()
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    SizedBox(
+                        height: screenHeight * 0.1,
+                        child: const ViewAllBooks()),
+                    SizedBox(
+                        height: screenHeight * 0.4, child: const BookSlider()),
+                  ],
                 ),
-                SizedBox(
-                  height: screenHeight * 0.3,
-                  child: const BookSlider()
-                ),
-                Container(
-                  color: Colors.green,
-                  height: screenHeight * 0.3,
-                )
+                const MyReadBooks()
               ],
             ),
           ),

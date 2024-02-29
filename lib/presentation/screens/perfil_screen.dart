@@ -19,7 +19,7 @@ class PerfilScreen extends StatelessWidget {
             children: <Widget>[
               CircleAvatar(
                 radius: 50,
-                backgroundImage: AssetImage('assets/perfil.jpg'), // Asegúrate de tener la imagen en la carpeta de assets
+                backgroundImage: AssetImage('assets/images/img-perfil.png'), // Asegúrate de tener la imagen en la carpeta de assets
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
