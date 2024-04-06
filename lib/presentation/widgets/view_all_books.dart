@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class ViewAllBooks extends StatelessWidget {
-  const ViewAllBooks({super.key});
+  const ViewAllBooks({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return TextButton(
-      onPressed: () {},
+      onPressed: () {
+        GoRouter.of(context).go('/allBook');
+      },
       child: const Row(
         mainAxisSize: MainAxisSize.min,
         mainAxisAlignment: MainAxisAlignment.end,

@@ -5,3 +5,6 @@ export 'package:olympus/presentation/screens/register_screen.dart';
 export 'package:olympus/presentation/screens/perfil_screen.dart';
 export 'package:olympus/presentation/screens/cart_screen.dart';
 export 'package:olympus/presentation/screens/search_screen.dart';
+export 'package:olympus/presentation/screens/all_books.dart';
+export 'package:olympus/presentation/screens/library_book_screen.dart';
+export 'package:olympus/presentation/screens/details_books_screen.dart';
